@@ -2,5 +2,7 @@
 // You should implement your task here.
 
 module.exports = function towelSort (matrix) {
-  return [];
+  answer = [];
+  for (row in matrix) row % 2 ? answer.push(...matrix[row].reverse()) : answer.push(...matrix[row]);
+  return answer;
 }
